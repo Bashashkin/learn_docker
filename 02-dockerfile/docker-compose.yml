@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    container_name: real-estate-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app/app
+      - ./static:/app/app/static
+    environment:
+      - FLASK_ENV=development
