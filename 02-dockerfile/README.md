@@ -113,17 +113,32 @@ requirements.txt:
 
 <img width="129" height="71" alt="image" src="https://github.com/user-attachments/assets/2ade2970-633e-4a6d-a2ef-271569e6c1c1" />
 
+Файл docker-compose.yml
+
+```YAML
+version: '3.9'
+
+services:
+  web:
+    build: .
+    container_name: real-estate-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app/app
+      - ./static:/app/app/static 
+    environment:
+      - FLASK_ENV=development
+```
+
 Файл .dockerignore:
 
 <img width="273" height="598" alt="image" src="https://github.com/user-attachments/assets/a423c963-fcf1-4bcb-a313-a7881b71d8b3" />
 
-Сборка:
-
-<img width="1009" height="344" alt="image" src="https://github.com/user-attachments/assets/c6caf3c0-c549-4263-b6ff-51a97b1cd661" />
-
 Запуск контейнера:
 
-<img width="1108" height="180" alt="image" src="https://github.com/user-attachments/assets/599c035f-30b4-44d3-8b09-33d94180034f" />
+<img width="1201" height="605" alt="image" src="https://github.com/user-attachments/assets/76eb1f84-101d-4f55-b5e0-33551b837c1d" />
+
 
 
 Приложение:
