@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анализ недвижимости</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f5f7fa;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .header {
+            margin-bottom: 30px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        h1 {
+            font-weight: 700;
+        }
+        th {
+    	    text-align: left !important;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container mt-5">
+
+    <!-- Заголовок -->
+    <div class="header text-center">
+        <h1>Анализ рынка недвижимости</h1>
+    </div>
+
+    <!-- Метрики -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card p-3 text-center">
+                <h5>Средняя цена</h5>
+                <h3>{{ avg_price }}</h3>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card p-3 text-center">
+                <h5>Средняя цена за м²</h5>
+                <h3>{{ avg_price_per_m2 }}</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Таблица -->
+    <div class="card p-3">
+        <h4 class="mb-3">Объекты недвижимости</h4>
+
+        <div class="table-container">
+            {{ table | safe }}
+        </div>
+    </div>
+    <div class="card p-3 mt-4">
+    <h4 class="mb-3">График цен по районам</h4>
+    
+    <img src="/static/plot.png" class="img-fluid mt-3">
+</div>
+</div>
+</div>
+</body>
+</html>
