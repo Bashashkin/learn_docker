@@ -112,3 +112,7 @@ spec:
 <img width="1187" height="573" alt="image" src="https://github.com/user-attachments/assets/14e965e8-1027-40b5-854a-1e57d6985ccc" />
 <img width="1202" height="372" alt="image" src="https://github.com/user-attachments/assets/27ab959d-26f5-440e-9c71-08d372588d20" />
 
+#Вывод
+
+В ходе лабораторной работы было выполнено развертывание аналитического приложения в кластере Kubernetes. Были разработаны и применены манифесты Deployment для развертывания контейнеров ClickHouse и Tabix, для организации сетевого взаимодействия между компонентами были созданы Service-ресурсы
+
