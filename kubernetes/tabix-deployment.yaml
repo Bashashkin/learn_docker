@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tabix-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tabix
+  template:
+    metadata:
+      labels:
+        app: tabix
+    spec:
+      containers:
+        - name: tabix
+          image: spoonest/clickhouse-tabix-web-client
+          ports:
+            - containerPort: 80
