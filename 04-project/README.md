@@ -22,7 +22,6 @@
 <img width="295" height="357" alt="image" src="https://github.com/user-attachments/assets/b934533d-753f-4338-9e75-70412f7e4a73" />
 
 
-
 Интерфейс приложения
 <img width="1193" height="653" alt="image" src="https://github.com/user-attachments/assets/6a387113-5d16-44ad-850e-75793a3e97dc" />
 
